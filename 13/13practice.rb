@@ -1,0 +1,44 @@
+# encoding:shift_jis
+
+puts "==== (1) ====="
+
+wday = {
+  "sunday"   => "“ú—j“ú",
+  "monday"   => "Œ—j“ú",
+  "tusday"   => "‰Î—j“ú",
+  "wensday"  => "…—j“ú",
+  "thursday" => "–Ø—j“ú",
+  "friday"   => "‹à—j“ú",
+  "saturday" => "“y—j“ú",
+}
+
+p wday
+
+puts "===== (2) ======"
+
+p wday.size
+
+
+puts "===== (3) ======"
+
+wday.each do |key,value|
+  print "u#{key}v‚Í#{value}‚Ì‚±‚Æ‚Å‚·B\n"
+end
+
+
+puts "===== (4) ======"
+
+def str2hash(str)
+  h = Hash.new(nil)
+  
+  list = str.split(/\s+/)
+  while list != []
+    key = list.shift
+    value = list.shift
+    h[key] = value
+  end
+  h
+end
+
+p str = "bule Â white ”’\nred Ô"
+p str2hash(str)

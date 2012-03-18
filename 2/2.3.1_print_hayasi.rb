@@ -1,0 +1,9 @@
+# encoding: Shift_JIS
+
+name = ["¬—Ñ", "—Ñ", "‚–ì", "X‰ª"]
+name.each do |name|
+  if /—Ñ/ =~ name
+    puts name
+  end
+end
+

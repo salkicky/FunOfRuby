@@ -1,0 +1,13 @@
+#!/usr/bin/ruby
+#encoding:shift_jis
+
+p rand      # => 0.1352...
+p rand(100) # => 31
+p rand(100) # => 84
+
+srand(1)     # ‹^——”‚ğ‰Šú‰»‚·‚é
+p [rand, rand, rand]
+srand(1)
+p [rand, rand,rand]
+
+p Random.rand

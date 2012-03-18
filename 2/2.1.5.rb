@@ -1,0 +1,6 @@
+# encoding: Shift_JIS
+
+name = ["¬—Ñ", "—Ñ", "‚–ì", "X‰ª"]
+name.each do |n|
+  puts n
+end

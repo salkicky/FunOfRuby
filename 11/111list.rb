@@ -1,0 +1,8 @@
+#!/usr/bin/ruby
+#encoding:shift_jis
+
+list = %w(a b c d)
+for i in 0..3
+  print i+1, "”Ô–Ú‚Ì—v‘f‚Í", list[i], "‚Å‚·B\n"
+end
+

@@ -1,0 +1,63 @@
+aafasdfa
+fdsadf
+adfasdfasdfasf
+dfdgegw
+fds
+------end------
+------end------
+-- More (100%) -- # encoding:shift_jis
+
+#### 15.1 #######
+
+ifile = open("foo.txt")
+while line = ifile.gets
+  puts line
+end
+ifile.close
+
+puts
+
+# ifile = open("foo.txt","a+")
+# ifile.puts("------end------\n")
+# ifile.close
+
+File.open("foo.txt") do |io|
+  while line = io.gets
+    puts line
+  end
+end
+
+io = File.open("foo.txt")
+p io.closed?
+io.close
+p io.closed?
+
+data = File.read("foo.txt")
+p data
+
+#### 15.2 #########
+
+io = open("foo.txt")
+while line = io.gets
+  p line
+  line.chomp!
+  p line
+end
+
+puts "####### each"
+io.rewind
+io.each do |line|
+  p line
+end
+
+puts "####### readlines"
+io.rewind
+ary = io.readlines
+ary.each do |line|
+  p line
+end
+
+puts "### lineno ###"
+while line = $stdin.gets
+  print "#{$stdin.lineno} : #{line}"
+end

@@ -4,6 +4,7 @@
 # Command Line Option
 #
 
+
 # "-d"
 puts "===== (1) ====="
 puts "debug mode" if $DEBUG

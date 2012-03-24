@@ -26,3 +26,9 @@ p "b = #{b}"
 ary = [1,2]
 a, = ary
 p a
+
+def foo(a, b, c)
+  a + b + c
+end
+ary = [2,3]
+p foo(4, *ary)

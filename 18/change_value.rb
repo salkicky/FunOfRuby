@@ -32,3 +32,17 @@ def foo(a, b, c)
 end
 ary = [2,3]
 p foo(4, *ary)
+
+def foo2(*args)
+  p args
+end
+foo2(1,2,3,4,5)
+
+puts "-----“ü‚êŽq”z—ñ----"
+
+ary = [1, [2, 3], 4]
+a, (b1, b2), c = ary
+p a
+p b1
+p b2
+p c

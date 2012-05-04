@@ -1,0 +1,19 @@
+#encoding:shift_jis
+
+str = "‚½‚Ì‚µ‚¢Ruby"
+
+def str.edition(n)
+  "#{self} ‘æ#{n}”Å"
+end
+
+p str.edition(3)
+
+
+class << str
+  def edition(n)
+    "#{self} ‘æ#{n}”Å"
+  end
+end
+
+p str.edition(3)
+

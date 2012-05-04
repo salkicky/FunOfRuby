@@ -1,0 +1,12 @@
+#encoding:shift_jis
+
+module Edition
+  def edition(n)
+    "#{self} ‘æ#{n}”Å"
+  end
+end
+
+str = "Šy‚µ‚¢Ruby"
+str.extend(Edition)
+
+p str.edition(3)

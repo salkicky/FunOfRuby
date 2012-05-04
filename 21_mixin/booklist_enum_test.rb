@@ -12,4 +12,7 @@ booklist.add(Book.new("Programing Pearls", "Bentley", "Computer"))
 titles = booklist.collect do |book|
   book.title
 end
-p title
+p titles
+
+p Book.ancestors
+p BookList.ancestors
